@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+<SurfaceView
+    android:id="@+id/surfaceView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dip"
+    android:layout_alignParentBottom="true"
+    android:background="@android:color/transparent">
+    <Button
+        android:id="@+id/imgPreview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:text="Compare"
+        android:textColor="#FFF"
+        android:background="#000"
+        android:gravity="bottom|center_horizontal"
+        android:paddingBottom="3dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="right|bottom"
+        android:layout_alignParentRight="true">
+
+
+    <TextView
+        android:id="@+id/compareImage"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Compare"
+        android:background="#FFF"
+        android:layout_margin="2dp"
+        android:onClick="compareImage"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+        android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Capture"
+            android:background="#FFF"
+        android:layout_margin="2dp"
+            android:onClick="captureImage"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>
